@@ -4,34 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Managment App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <main class="container">
-      <h1>Task Todo App</h1>
-      <div class="wrapper">
-        <form id="task app">
-          <input id="task name" type="text">
-          <button id="add button">Add New Tasks</button>
+      <h1>Task To Do App</h1>
+      <div class="wraper">
+        <form id="task-app">
+          <input id="task-name" type="text" placeholder="Add" />
+          <button id="add button" type="submit">Add Here</button>
         </form>
       </div>
+      <ul id="task-display-area"></ul>
+
       <div class="form">
-        <label for="task-category">Category</label>
-        <select name="" id=""></select>
+        <label for="task-category"><strong>Category</strong></label>
+        <select name="Category" id="task-category">
+          <option value="">--Category--</option>
 
+          <option value="study">Study Hard</option>
+          <option value="work out">Gym</option>
+          <option value="Walk dog">Walk dog</option>
+          <option value="Wash Car">Wash The Car</option>
+        </select>
 
-
-
-
+        <div class="form">
+          <label for="task-Deadline"><strong>Deadline</strong></label>
+          <input type="date" required />
+        </div>
       </div>
 
+      <div class="form">
+        <label for="task-status"><strong>Status</strong></label>
+        <select name="Status" id="task-status">
+          <option value="">--Update the status--</option>
+          <option value="Todo">To Do</option>
+          <option value="in Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
 
-     
+      <div class="form"></div>
+      <h2>Filter Task</h2>
+      <div class="filter-section">
+        <select name="filter" id="filter-section">
+          <option value="">Status</option>
+          <option value="Overdue">Overdue</option>
+          <option value="in Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
 
-
-      <section id=" display">
-        <h2>Your Task</h2>
-        <ul id="task list"></ul>
-      </section>
+        <select name="filter" id="filter-category">
+          <option value="">Category</option>
+          <option value="study">Study Hard</option>
+          <option value="work out">Gym</option>
+          <option value="Walk dog">Walk dog</option>
+          <option value="Wash Car">Wash The Car</option>
+        </select>
+      </div>
     </main>
+    <script src="app.js">
+      const taskForm = document.getElementById("task-app");
+      const taskList = document.getElementById("task-display-area");
+      const taskNameInput = document.getElementById("task-name");
+      const categoryInput = document.getElementById("task-category");
+      const deadlineInput = document.querySelector('input[type="date"]');
+      const statusInput = document.getElementById("task-status");
+    </script>
   </body>
 </html>
