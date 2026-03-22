@@ -1,0 +1,5 @@
+I approached this project with a headstrong mentality, eager to dive straight into the code. However, I quickly realized that building a functional application requires a deeper grasp of how data moves between the user and the browser. When I hit roadblocks, I found it essential to step away and reinforce my foundations.
+
+To solve the challenges I faced—specifically around LocalStorage and DOM manipulation—I utilized a mix of MDN Web Docs for technical definitions and followed along with specialized "To-Do List" tutorials on YouTube. This combination of reading documentation and watching live coding helped me visualize how functions interact with each other.
+
+If given more time, I would focus on refactoring my filtering logic to be even more seamless and perhaps add more visual feedback for the user, such as "Success" animations when a task is completed. This project taught me that coding is a marathon, not a sprint; I plan to keep practicing daily to better understand JavaScript's logic without getting overwhelmed by its complexity.
