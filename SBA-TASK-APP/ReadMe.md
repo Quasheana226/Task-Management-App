@@ -1,8 +1,7 @@
 # Task-Management-App
 
 # how the app works
-
-The first thing you can do is add or delete a task once you have add it item it is saved to a local storage so when you add and refresh it is stored locally to keep data safe
+The application allows you to add or delete tasks seamlessly. Once an item is added, it is saved to local storage, ensuring your data persists even after refreshing the page.
 
 # references
 
